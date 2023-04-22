@@ -19,6 +19,7 @@ class MyClient(discord.Client):
         status = discord.Status.online
         activity = discord.Game("WarAndOrder")
         await self.change_presence(status = status, activity = activity)
+        print("준비 @1")
 
     # 메시지
     async def on_message(self, message):
